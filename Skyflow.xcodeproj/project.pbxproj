@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084B539893200EAA9CC77205 /* Pods_Skyflow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1349953DC56DD99D716CD82D /* Pods_Skyflow.framework */; };
+		286F25262352AA810000A7A0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286F25252352AA810000A7A0 /* Flight.swift */; };
+		2889337A2355349A00E0DF14 /* FlightListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288933742355349900E0DF14 /* FlightListPresenter.swift */; };
+		2889337B2355349A00E0DF14 /* FlightListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288933752355349A00E0DF14 /* FlightListWorker.swift */; };
+		2889337C2355349A00E0DF14 /* FlightListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288933762355349A00E0DF14 /* FlightListRouter.swift */; };
+		2889337D2355349A00E0DF14 /* FlightListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288933772355349A00E0DF14 /* FlightListModels.swift */; };
+		2889337F2355349A00E0DF14 /* FlightListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288933792355349A00E0DF14 /* FlightListInteractor.swift */; };
+		288933812355386000E0DF14 /* FlightList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288933802355386000E0DF14 /* FlightList.swift */; };
+		288933832357DACC00E0DF14 /* FlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288933822357DACC00E0DF14 /* FlightDetailView.swift */; };
+		28F3CB6F23529FCD00C008F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3CB6E23529FCD00C008F7 /* AppDelegate.swift */; };
+		28F3CB7123529FCD00C008F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3CB7023529FCD00C008F7 /* SceneDelegate.swift */; };
+		28F3CB7423529FCD00C008F7 /* Skyflow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28F3CB7223529FCD00C008F7 /* Skyflow.xcdatamodeld */; };
+		28F3CB7623529FCD00C008F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3CB7523529FCD00C008F7 /* ContentView.swift */; };
+		28F3CB7823529FD100C008F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F3CB7723529FD100C008F7 /* Assets.xcassets */; };
+		28F3CB7B23529FD100C008F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F3CB7A23529FD100C008F7 /* Preview Assets.xcassets */; };
+		28F3CB7E23529FD100C008F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F3CB7C23529FD100C008F7 /* LaunchScreen.storyboard */; };
+		28F3CB8923529FD100C008F7 /* SkyflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3CB8823529FD100C008F7 /* SkyflowTests.swift */; };
+		28F3CB9423529FD100C008F7 /* SkyflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3CB9323529FD100C008F7 /* SkyflowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28F3CB8523529FD100C008F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28F3CB6323529FCD00C008F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28F3CB6A23529FCD00C008F7;
+			remoteInfo = Skyflow;
+		};
+		28F3CB9023529FD100C008F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28F3CB6323529FCD00C008F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28F3CB6A23529FCD00C008F7;
+			remoteInfo = Skyflow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1349953DC56DD99D716CD82D /* Pods_Skyflow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skyflow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		286F25252352AA810000A7A0 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		288933742355349900E0DF14 /* FlightListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListPresenter.swift; sourceTree = "<group>"; };
+		288933752355349A00E0DF14 /* FlightListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListWorker.swift; sourceTree = "<group>"; };
+		288933762355349A00E0DF14 /* FlightListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListRouter.swift; sourceTree = "<group>"; };
+		288933772355349A00E0DF14 /* FlightListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListModels.swift; sourceTree = "<group>"; };
+		288933792355349A00E0DF14 /* FlightListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListInteractor.swift; sourceTree = "<group>"; };
+		288933802355386000E0DF14 /* FlightList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightList.swift; sourceTree = "<group>"; };
+		288933822357DACC00E0DF14 /* FlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailView.swift; sourceTree = "<group>"; };
+		28F3CB6B23529FCD00C008F7 /* Skyflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F3CB6E23529FCD00C008F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28F3CB7023529FCD00C008F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		28F3CB7323529FCD00C008F7 /* Skyflow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Skyflow.xcdatamodel; sourceTree = "<group>"; };
+		28F3CB7523529FCD00C008F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28F3CB7723529FD100C008F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28F3CB7A23529FD100C008F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28F3CB7D23529FD100C008F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28F3CB7F23529FD100C008F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F3CB8423529FD100C008F7 /* SkyflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F3CB8823529FD100C008F7 /* SkyflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyflowTests.swift; sourceTree = "<group>"; };
+		28F3CB8A23529FD100C008F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F3CB8F23529FD100C008F7 /* SkyflowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyflowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F3CB9323529FD100C008F7 /* SkyflowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyflowUITests.swift; sourceTree = "<group>"; };
+		28F3CB9523529FD100C008F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93622C0B4AE5E157E83FD723 /* Pods-Skyflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyflow.release.xcconfig"; path = "Target Support Files/Pods-Skyflow/Pods-Skyflow.release.xcconfig"; sourceTree = "<group>"; };
+		BCEACC6430424C7124B0DA61 /* Pods-Skyflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyflow.debug.xcconfig"; path = "Target Support Files/Pods-Skyflow/Pods-Skyflow.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28F3CB6823529FCD00C008F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084B539893200EAA9CC77205 /* Pods_Skyflow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F3CB8123529FD100C008F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F3CB8C23529FD100C008F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025E3A6198EBF7305FADF162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1349953DC56DD99D716CD82D /* Pods_Skyflow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		288933732355347100E0DF14 /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				288933742355349900E0DF14 /* FlightListPresenter.swift */,
+				288933752355349A00E0DF14 /* FlightListWorker.swift */,
+				288933762355349A00E0DF14 /* FlightListRouter.swift */,
+				288933772355349A00E0DF14 /* FlightListModels.swift */,
+				288933792355349A00E0DF14 /* FlightListInteractor.swift */,
+				288933802355386000E0DF14 /* FlightList.swift */,
+				288933822357DACC00E0DF14 /* FlightDetailView.swift */,
+			);
+			path = Flights;
+			sourceTree = "<group>";
+		};
+		28F3CB6223529FCD00C008F7 = {
+			isa = PBXGroup;
+			children = (
+				28F3CB6D23529FCD00C008F7 /* Skyflow */,
+				28F3CB8723529FD100C008F7 /* SkyflowTests */,
+				28F3CB9223529FD100C008F7 /* SkyflowUITests */,
+				28F3CB6C23529FCD00C008F7 /* Products */,
+				F0D00D0E76F5633F7BD94C74 /* Pods */,
+				025E3A6198EBF7305FADF162 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28F3CB6C23529FCD00C008F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28F3CB6B23529FCD00C008F7 /* Skyflow.app */,
+				28F3CB8423529FD100C008F7 /* SkyflowTests.xctest */,
+				28F3CB8F23529FD100C008F7 /* SkyflowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28F3CB6D23529FCD00C008F7 /* Skyflow */ = {
+			isa = PBXGroup;
+			children = (
+				28F3CB6E23529FCD00C008F7 /* AppDelegate.swift */,
+				28F3CB7023529FCD00C008F7 /* SceneDelegate.swift */,
+				28F3CB7523529FCD00C008F7 /* ContentView.swift */,
+				288933732355347100E0DF14 /* Flights */,
+				28F3CB7723529FD100C008F7 /* Assets.xcassets */,
+				28F3CB7C23529FD100C008F7 /* LaunchScreen.storyboard */,
+				28F3CB7F23529FD100C008F7 /* Info.plist */,
+				28F3CB7223529FCD00C008F7 /* Skyflow.xcdatamodeld */,
+				28F3CB7923529FD100C008F7 /* Preview Content */,
+				286F25252352AA810000A7A0 /* Flight.swift */,
+			);
+			path = Skyflow;
+			sourceTree = "<group>";
+		};
+		28F3CB7923529FD100C008F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28F3CB7A23529FD100C008F7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28F3CB8723529FD100C008F7 /* SkyflowTests */ = {
+			isa = PBXGroup;
+			children = (
+				28F3CB8823529FD100C008F7 /* SkyflowTests.swift */,
+				28F3CB8A23529FD100C008F7 /* Info.plist */,
+			);
+			path = SkyflowTests;
+			sourceTree = "<group>";
+		};
+		28F3CB9223529FD100C008F7 /* SkyflowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28F3CB9323529FD100C008F7 /* SkyflowUITests.swift */,
+				28F3CB9523529FD100C008F7 /* Info.plist */,
+			);
+			path = SkyflowUITests;
+			sourceTree = "<group>";
+		};
+		F0D00D0E76F5633F7BD94C74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCEACC6430424C7124B0DA61 /* Pods-Skyflow.debug.xcconfig */,
+				93622C0B4AE5E157E83FD723 /* Pods-Skyflow.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28F3CB6A23529FCD00C008F7 /* Skyflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F3CB9823529FD100C008F7 /* Build configuration list for PBXNativeTarget "Skyflow" */;
+			buildPhases = (
+				10A7D509DB12C8EAFFC7681F /* [CP] Check Pods Manifest.lock */,
+				28F3CB6723529FCD00C008F7 /* Sources */,
+				28F3CB6823529FCD00C008F7 /* Frameworks */,
+				28F3CB6923529FCD00C008F7 /* Resources */,
+				2BEB4D8225F0E0A3DAA1F6DE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skyflow;
+			productName = Skyflow;
+			productReference = 28F3CB6B23529FCD00C008F7 /* Skyflow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28F3CB8323529FD100C008F7 /* SkyflowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F3CB9B23529FD100C008F7 /* Build configuration list for PBXNativeTarget "SkyflowTests" */;
+			buildPhases = (
+				28F3CB8023529FD100C008F7 /* Sources */,
+				28F3CB8123529FD100C008F7 /* Frameworks */,
+				28F3CB8223529FD100C008F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28F3CB8623529FD100C008F7 /* PBXTargetDependency */,
+			);
+			name = SkyflowTests;
+			productName = SkyflowTests;
+			productReference = 28F3CB8423529FD100C008F7 /* SkyflowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28F3CB8E23529FD100C008F7 /* SkyflowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28F3CB9E23529FD100C008F7 /* Build configuration list for PBXNativeTarget "SkyflowUITests" */;
+			buildPhases = (
+				28F3CB8B23529FD100C008F7 /* Sources */,
+				28F3CB8C23529FD100C008F7 /* Frameworks */,
+				28F3CB8D23529FD100C008F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28F3CB9123529FD100C008F7 /* PBXTargetDependency */,
+			);
+			name = SkyflowUITests;
+			productName = SkyflowUITests;
+			productReference = 28F3CB8F23529FD100C008F7 /* SkyflowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28F3CB6323529FCD00C008F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Luis Zapata";
+				TargetAttributes = {
+					28F3CB6A23529FCD00C008F7 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					28F3CB8323529FD100C008F7 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 28F3CB6A23529FCD00C008F7;
+					};
+					28F3CB8E23529FD100C008F7 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 28F3CB6A23529FCD00C008F7;
+					};
+				};
+			};
+			buildConfigurationList = 28F3CB6623529FCD00C008F7 /* Build configuration list for PBXProject "Skyflow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28F3CB6223529FCD00C008F7;
+			productRefGroup = 28F3CB6C23529FCD00C008F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28F3CB6A23529FCD00C008F7 /* Skyflow */,
+				28F3CB8323529FD100C008F7 /* SkyflowTests */,
+				28F3CB8E23529FD100C008F7 /* SkyflowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28F3CB6923529FCD00C008F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F3CB7E23529FD100C008F7 /* LaunchScreen.storyboard in Resources */,
+				28F3CB7B23529FD100C008F7 /* Preview Assets.xcassets in Resources */,
+				28F3CB7823529FD100C008F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F3CB8223529FD100C008F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F3CB8D23529FD100C008F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10A7D509DB12C8EAFFC7681F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skyflow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BEB4D8225F0E0A3DAA1F6DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skyflow/Pods-Skyflow-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skyflow/Pods-Skyflow-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skyflow/Pods-Skyflow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28F3CB6723529FCD00C008F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2889337A2355349A00E0DF14 /* FlightListPresenter.swift in Sources */,
+				2889337B2355349A00E0DF14 /* FlightListWorker.swift in Sources */,
+				28F3CB6F23529FCD00C008F7 /* AppDelegate.swift in Sources */,
+				28F3CB7423529FCD00C008F7 /* Skyflow.xcdatamodeld in Sources */,
+				2889337F2355349A00E0DF14 /* FlightListInteractor.swift in Sources */,
+				288933832357DACC00E0DF14 /* FlightDetailView.swift in Sources */,
+				288933812355386000E0DF14 /* FlightList.swift in Sources */,
+				2889337C2355349A00E0DF14 /* FlightListRouter.swift in Sources */,
+				2889337D2355349A00E0DF14 /* FlightListModels.swift in Sources */,
+				286F25262352AA810000A7A0 /* Flight.swift in Sources */,
+				28F3CB7623529FCD00C008F7 /* ContentView.swift in Sources */,
+				28F3CB7123529FCD00C008F7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F3CB8023529FD100C008F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F3CB8923529FD100C008F7 /* SkyflowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28F3CB8B23529FD100C008F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F3CB9423529FD100C008F7 /* SkyflowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28F3CB8623529FD100C008F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28F3CB6A23529FCD00C008F7 /* Skyflow */;
+			targetProxy = 28F3CB8523529FD100C008F7 /* PBXContainerItemProxy */;
+		};
+		28F3CB9123529FD100C008F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28F3CB6A23529FCD00C008F7 /* Skyflow */;
+			targetProxy = 28F3CB9023529FD100C008F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28F3CB7C23529FD100C008F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28F3CB7D23529FD100C008F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28F3CB9623529FD100C008F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28F3CB9723529FD100C008F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28F3CB9923529FD100C008F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEACC6430424C7124B0DA61 /* Pods-Skyflow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Skyflow/Preview Content\"";
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Skyflow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.Skyflow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28F3CB9A23529FD100C008F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93622C0B4AE5E157E83FD723 /* Pods-Skyflow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Skyflow/Preview Content\"";
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Skyflow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.Skyflow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28F3CB9C23529FD100C008F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = SkyflowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.SkyflowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skyflow.app/Skyflow";
+			};
+			name = Debug;
+		};
+		28F3CB9D23529FD100C008F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = SkyflowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.SkyflowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skyflow.app/Skyflow";
+			};
+			name = Release;
+		};
+		28F3CB9F23529FD100C008F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = SkyflowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.SkyflowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Skyflow;
+			};
+			name = Debug;
+		};
+		28F3CBA023529FD100C008F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BG2HQRVX8;
+				INFOPLIST_FILE = SkyflowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgluis.SkyflowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Skyflow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28F3CB6623529FCD00C008F7 /* Build configuration list for PBXProject "Skyflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F3CB9623529FD100C008F7 /* Debug */,
+				28F3CB9723529FD100C008F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28F3CB9823529FD100C008F7 /* Build configuration list for PBXNativeTarget "Skyflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F3CB9923529FD100C008F7 /* Debug */,
+				28F3CB9A23529FD100C008F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28F3CB9B23529FD100C008F7 /* Build configuration list for PBXNativeTarget "SkyflowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F3CB9C23529FD100C008F7 /* Debug */,
+				28F3CB9D23529FD100C008F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28F3CB9E23529FD100C008F7 /* Build configuration list for PBXNativeTarget "SkyflowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28F3CB9F23529FD100C008F7 /* Debug */,
+				28F3CBA023529FD100C008F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28F3CB7223529FCD00C008F7 /* Skyflow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28F3CB7323529FCD00C008F7 /* Skyflow.xcdatamodel */,
+			);
+			currentVersion = 28F3CB7323529FCD00C008F7 /* Skyflow.xcdatamodel */;
+			path = Skyflow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 28F3CB6323529FCD00C008F7 /* Project object */;
+}
